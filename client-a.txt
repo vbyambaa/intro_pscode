@@ -1,4 +1,35 @@
 # Client Task A #
 # Add your pseudocode to this file below this line: #
-# ------------------------------------------------- #
-
+#---------------------------------------------------#
+                ###### Pseudocode ######
+PROGRAM: guessNumber 
+SET: ran_num /the computer chooses a random number between 1 and 10./  
+SET: chances /The player  attampts 3 times/
+INPUT: guess_num / the player guess number/
+SELECTION: IF (<condition>)
+                THEN <statements>;
+                ELSE <statements>;
+            ENDIF;
+STRUCTURE of PROGRAM:
+        PROGRAM <name>:
+                <Do stuff>
+                    statement1
+                    statement1
+                    statement1
+                    ..........
+        END.
+###---------------------------------------------------###
+PROGRAM <guessNumber>
+	SET: ran_num to RANDOM(1, 10)
+	SET: chances  to 3 
+WHILE chances > 0 DO
+    DISPLAY " GUESS A NUMBER BETWEEN 1 AND 10"
+    INPUT guess_num
+        IF guess_num = ran_num
+	        DISPLAY  "CONGRATULATIONS."
+        ELSE 
+	        DISPLAY "INCORRECT. TRY AGAIN."
+        IF chances = 0
+	        DISPLAY " SORRY, OUT OF CHANCES.THE CORRECT NUMBER WAS" + ran_num
+FINISH
+------------------------------------------------- #

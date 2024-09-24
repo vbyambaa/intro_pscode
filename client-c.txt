@@ -1,4 +1,19 @@
 # Client Task C #
 # Add your pseudocode to this file below this line: #
+Pseudocode: Product Package Counter
+RANGE:
+    start number: 2.
+    stop number: 50 +1
+    step number: 2  
+SET: 'num' -number
+Loops:
+        1. Start 'num' with the value 2.
+        2. While 'num' is less than 51:
+            a. Print the value of 'num'.
+            b. Increment 'num' by 2.
+        3. End loop.
+Code:
+    for num in range(2, 51, 2):
+        print(num)
 # ------------------------------------------------- #
 

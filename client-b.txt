@@ -1,4 +1,50 @@
 # Client Task B #
 # Add your pseudocode to this file below this line: #
-# ------------------------------------------------- #
+
+
+######PSEUDOCODE######
+Sst:
+        current position (cur_pos) -where customer currently is. 
+        target position (tar_pos)  -where customer want to go. 
+        cur_pos cordinate (curX, curY) -cordinated by X, Y 
+        tar_pos cordinate (tarX, tarY) -cordinated by X, Y 
+        direction ("N", "S", "E", "W") -customer movement
+
+Loop:
+The WHILE loop continues until customer current position (cur_pos) 
+matches the target position (tar_pos).
+
+Inside the loop:
+Program prompt the user to input a direction (North, South, East, or West).
+Depending on the input, program adjust the current position:
+If the input is “N,” , step up the y coordinate of cur_pos.
+If the input is “S,” , step down the y coordinate of cur_pos.
+If the input is “E,” , step up the x coordinate of cur_pos.
+If the input is “W,” , step down the x coordinate of cur_pos.
+
+End loop:
+Once the loop exits  cur_pos equals tar_pos, print “You’ve made it!” 
+# ------------------------------------------------ #
+
+Code:
+BEGIN
+    SET cur_pos TO (curX, curY)
+    SET tar_pos TO (tarX, tarY)
+
+    WHILE cur_pos != tar_pos DO
+        PRINT "Move (N, S, E, W):"
+        INPUT direction
+
+        IF direction = "N" THEN
+            INCREMENT cur_pos.y
+        ELSE IF direction = "S" THEN
+            DECREMENT cur_pos.y
+        ELSE IF direction = "E" THEN
+            INCREMENT cur_pos.x
+        ELSE IF direction = "W" THEN
+            DECREMENT cur_pos.x
+    END WHILE
+
+    PRINT "You've made it!"
+END
 
